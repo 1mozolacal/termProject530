@@ -1,3 +1,3 @@
-.idea
-db.sqlite3
-manage.py
+backEnd/.idea
+backEnd/db.sqlite3
+backEnd/manage.py
