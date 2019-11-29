@@ -1,24 +1,9 @@
-import React, { Component, Fragment } from "react";
-import ReactDOM from "react-dom";
-
-import Header from "./layout/Header";
-import Dashboard from "./display/Dashboard";
-
-import { Provider } from "react-redux";
-import store from "../store";
+import React from "react";
+import REactDom from "react-dom";
 
 class App extends Component {
   render() {
-    return (
-      <Provider store={store}>
-        <Fragment>
-          <Header />
-          <div className="container">
-            <Dashboard />
-          </div>
-        </Fragment>
-      </Provider>
-    );
+    return <h1>The basic App</h1>;
   }
 }
 
