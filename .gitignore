@@ -9,3 +9,5 @@ backEnd/node_modules/
 backEnd/package-lock.json
 backEnd/package.json
 backEnd/webpack.config.js
+backEnd/backend/__pycache__
+**/__pycache__
