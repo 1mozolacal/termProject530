@@ -44,7 +44,7 @@ body {
 }
 
 
-#main_block{
+.main_block{
     font-family: 'Kalam', cursive;
     margin-top:15%;
     background-color: #363636;
