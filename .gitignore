@@ -2,3 +2,4 @@ backEnd/.idea
 backEnd/db.sqlite3
 backEnd/manage.py
 backEnd/backend/__pycache__
+**/__pycache__
