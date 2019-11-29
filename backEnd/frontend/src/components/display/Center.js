@@ -8,6 +8,10 @@ export class center extends Component {
     object: PropTypes.array.isRequired
   };
 
+  componentDidMount() {
+    this.props.getInfo();
+  }
+
   render() {
     return (
       <div>
@@ -21,4 +25,4 @@ const mapStateToProps = state => ({
   object: state.centerReducer.object
 });
 
-export default connect(mapStateToProps)(center);
+export default connect(mapStateToProps, { getInfo })(center);
