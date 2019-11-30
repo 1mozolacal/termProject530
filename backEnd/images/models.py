@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Images(models.Model):
+class Image(models.Model):
 
     caption = models.CharField(max_length=500)
     url = models.CharField(max_length=5000)
