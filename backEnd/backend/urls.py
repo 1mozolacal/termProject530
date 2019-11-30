@@ -10,7 +10,7 @@ urlpatterns = [
     path('', include('frontend.urls')),
     path('admin/', admin.site.urls),
     path('music/', include('music.urls')),
-    url(r'^stocks/',views.StockList.as_view()),
+    #url(r'^stocks/',views.StockList.as_view()),
     url(r'^images/',views.ImageList.as_view()),
 ]
 

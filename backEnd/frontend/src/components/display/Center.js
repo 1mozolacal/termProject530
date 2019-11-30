@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getInfo } from "../../actions/centerAction";
+import { getInfo, deletePicture } from "../../actions/centerAction";
 
 export class center extends Component {
   static propTypes = {
@@ -19,21 +19,17 @@ export class center extends Component {
         <table className="table table-striped">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>ticker</th>
-              <th>op</th>
-              <th>close</th>
-              <th>volume</th>
+              <th>Cap</th>
+              <th>URL</th>
+              <th>description</th>
             </tr>
           </thead>
           <tbody>
             {this.props.object.map(item => (
               <tr key={item.id}>
-                <td>{item.id}</td>
-                <td>{item.ticker}</td>
-                <td>{item.op}</td>
-                <td>{item.close}</td>
-                <td>{item.volume}</td>
+                <td>{item.caption}</td>
+                <td>{item.url}</td>
+                <td>{item.desc}</td>
               </tr>
             ))}
           </tbody>
