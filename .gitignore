@@ -4,7 +4,6 @@ backEnd/manage.py
 backEnd/backend/__pycache__
 **/__pycache__
 backEnd/.babelrc
-backEnd/db.sqlite3
 backEnd/node_modules
 backEnd/package-lock.json
 backEnd/package.json
