@@ -19,15 +19,9 @@ export class Form extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-<<<<<<< HEAD
     const { cap, url, des, author } = this.state;
     const object = { cap, url, des, author };
     this.props.makePicture(object);
-=======
-    const { caption, url, description, author } = this.state;
-    const object = { caption, url, description, author };
-    this.props.addPicture(object);
->>>>>>> 4b9fe2aea8afbfc923e6eed04841b71f1ecf8956
     console.log("Submitted");
   };
 
