@@ -12,7 +12,7 @@ export class Form extends Component {
   };
 
   static propTypes = {
-    makePicture: PropTypes.func.isRequired
+    mak44ePicture: PropTypes.func.isRequired
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });

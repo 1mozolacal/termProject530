@@ -21,11 +21,13 @@ export class center extends Component {
         <h1>Gallary</h1>
 
         {this.props.object.map(item => (
+
+
           <div className="pb-4" key={item.id}>
             <div className="content_blk">
               <h3>{item.cap}</h3>
               <div className="row">
-                <div className="col">
+                <div className="col-6">
                   <div className="flip-card">
                     <div className="flip-card-inner">
                       <div className="sm_box flip-card-front">
@@ -37,10 +39,12 @@ export class center extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="img_blk col-mg-auto">
+                <div className="col-6">
                   <img src={item.url}></img>
                 </div>
               </div>
+
+              
               <div className="button">
                 <button
                   type="button"
