@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { getInfo, deletePicture } from "../../actions/centerAction";
-
+import '../../../templates/frontend/style.css';
 export class center extends Component {
   static propTypes = {
     object: PropTypes.array.isRequired,
@@ -15,10 +15,12 @@ export class center extends Component {
   }
 
   render() {
+
     return (
+
       <Fragment>
         <h1>title</h1>
-
+        
         {this.props.object.map(item => (
           <div className="content_blk" key={item.id}>
             <h3>Reactjs</h3>
