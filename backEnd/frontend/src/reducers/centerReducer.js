@@ -1,4 +1,4 @@
-import { GET_INFO, DELETE_PICTURE, MAKE_PICTURE } from "../actions/types.js";
+import { GET_INFO, DELETE_PICTURE, ADD_PICTURE } from "../actions/types.js";
 
 const initalState = {
   object: []
@@ -16,7 +16,7 @@ export default function(state = initalState, action) {
         ...state,
         object: state.object.filter(item => item.id !== action.payload)
       };
-    case MAKE_PICTURE:
+    case ADD_PICTURE:
       return {
         ...state,
         object: [...state.object, action.payload]
