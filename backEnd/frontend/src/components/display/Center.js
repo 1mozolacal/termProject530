@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { getInfo, deletePicture } from "../../actions/centerAction";
 import "../../../templates/frontend/style.css";
+
 export class center extends Component {
   static propTypes = {
     object: PropTypes.array.isRequired,
@@ -24,13 +25,20 @@ export class center extends Component {
             <div className="content_blk">
               <h3>{item.cap}</h3>
               <div className="row">
-                <div className="col sm_box">
-                  <p>{item.des}</p>
-                </div>
-                <div className="col-md-auto">
-                  <div className="img_blk">
-                    <img src={item.url}></img>
+                <div className="col">
+                  <div className="flip-card">
+                    <div className="flip-card-inner">
+                      <div className="sm_box flip-card-front">
+                        <p>{item.des}</p>
+                      </div>
+                      <div className="sm_box flip-card-back">
+                        <p>By:{item.author}</p>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div className="img_blk col-mg-auto">
+                  <img src={item.url}></img>
                 </div>
               </div>
               <div className="button">

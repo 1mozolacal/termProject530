@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { addPicture } from "../../actions/centerAction";
+import { makePicture } from "../../actions/centerAction";
 
 export class Form extends Component {
   state = {
@@ -12,7 +12,7 @@ export class Form extends Component {
   };
 
   static propTypes = {
-    addPicture: PropTypes.func.isRequired
+    makePicture: PropTypes.func.isRequired
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -81,4 +81,4 @@ export class Form extends Component {
   }
 }
 
-export default connect(null, { addPicture })(Form);
+export default connect(null, { makePicture })(Form);
