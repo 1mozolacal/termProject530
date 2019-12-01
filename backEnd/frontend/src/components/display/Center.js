@@ -27,9 +27,12 @@ export class center extends Component {
           <tbody>
             {this.props.object.map(item => (
               <tr key={item.id}>
-                <td>{item.caption}</td>
-                <td>{item.url}</td>
-                <td>{item.desc}</td>
+                <td>{item.cap}</td>
+                <td>
+                  <img src={item.url}></img>
+                  {item.url}
+                </td>
+                <td>{item.des}</td>
               </tr>
             ))}
           </tbody>
