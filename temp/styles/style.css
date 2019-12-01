@@ -1,3 +1,12 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
 @import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 body {
     margin: 0;
@@ -6,7 +15,7 @@ body {
 	font-family: "Exo", sans-serif;
 	color: #fff;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 500% 500%;
+	background-size: 600% 600%;
     animation: gradientBG 15s ease infinite;
     
 }
@@ -98,3 +107,6 @@ img{
     padding: 20px;
     margin: 30px;
 }
+
+
+  
