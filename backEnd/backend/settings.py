@@ -21,7 +21,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'music.apps.MusicConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -31,7 +30,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'companies.apps.CompaniesConfig',
     'frontend',
-    'images.apps.ImagesConfig'
 ]
 
 MIDDLEWARE = [
