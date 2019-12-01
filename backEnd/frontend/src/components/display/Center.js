@@ -16,27 +16,31 @@ export class center extends Component {
     return (
       <Fragment>
         <h1>title</h1>
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              <th>Cap</th>
-              <th>URL</th>
-              <th>description</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.props.object.map(item => (
-              <tr key={item.id}>
-                <td>{item.cap}</td>
-                <td>
+
+        {this.props.object.map(item => (
+          <div className="content_blk" key={item.id}>
+            <h3>Reactjs</h3>
+            <div className="row">
+              <div className="col sm_box">
+                <p>{item.des}</p>
+              </div>
+              <div className="col-md-auto">
+                <div className="img_blk">
                   <img src={item.url}></img>
-                  {item.url}
-                </td>
-                <td>{item.des}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                </div>
+              </div>
+            </div>
+            <div className="button">
+              <button
+                type="button"
+                className="btn btn-danger"
+                onClick={this.props.deletePicture.bind(this, item.id)}
+              >
+                delete Picture
+              </button>
+            </div>
+          </div>
+        ))}
       </Fragment>
     );
   }
@@ -46,4 +50,4 @@ const mapStateToProps = state => ({
   object: state.centerReducer.object
 });
 
-export default connect(mapStateToProps, { getInfo })(center);
+export default connect(mapStateToProps, { getInfo, deletePicture })(center);

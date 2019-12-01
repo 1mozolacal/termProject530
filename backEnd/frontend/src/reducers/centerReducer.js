@@ -14,9 +14,7 @@ export default function(state = initalState, action) {
     case DELETE_PICTURE:
       return {
         ...state,
-        object: state.object.filter(
-          item => ListeningStateChangedEvent.id !== action.payload
-        )
+        object: state.object.filter(item => item.id !== action.payload)
       };
     default:
       return state;
