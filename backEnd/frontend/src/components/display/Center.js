@@ -5,7 +5,9 @@ import { getInfo, deletePicture } from "../../actions/centerAction";
 
 export class center extends Component {
   static propTypes = {
-    object: PropTypes.array.isRequired
+    object: PropTypes.array.isRequired,
+    getInfo: PropTypes.func.isRequired,
+    deletePicture: PropTypes.func.isRequired
   };
 
   componentDidMount() {
