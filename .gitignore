@@ -1,6 +1,14 @@
 backEnd/.idea
 backEnd/db.sqlite3
+backEnd/backend/__pycache__
+backEnd/.babelrc
+backEnd/frontend/
+backEnd/images/
 backEnd/manage.py
+backEnd/node_modules/
+backEnd/package-lock.json
+backEnd/package.json
+backEnd/webpack.config.js
 backEnd/backend/__pycache__
 **/__pycache__
 backEnd/.babelrc
