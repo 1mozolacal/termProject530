@@ -11,6 +11,3 @@ class PicList(APIView):
         pictures = Pic.objects.all()
         serializer = PicSerializer(pictures, many=True)
         return Response(serializer.data)
-
-    def post(self):
-        pass

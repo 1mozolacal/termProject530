@@ -19,7 +19,7 @@ export default function(state = initalState, action) {
     case MAKE_PICTURE:
       return {
         ...state,
-        object: [...state, action.payload]
+        object: [...state.object, action.payload]
       };
     default:
       return state;

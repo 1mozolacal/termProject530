@@ -5,9 +5,9 @@ import { makePicture } from "../../actions/centerAction";
 
 export class Form extends Component {
   state = {
-    caption: "",
+    cap: "",
     url: "",
-    description: "",
+    des: "",
     author: ""
   };
 
@@ -19,14 +19,14 @@ export class Form extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    const { caption, url, description, author } = this.state;
-    const object = { caption, url, description, author };
+    const { cap, url, des, author } = this.state;
+    const object = { cap, url, des, author };
     this.props.makePicture(object);
     console.log("Submitted");
   };
 
   render() {
-    const { catpion, url, description, author } = this.state;
+    const { cap, url, des, author } = this.state;
     return (
       <div className="car card-body mat-4 mr-4">
         Add a Picture
@@ -36,15 +36,15 @@ export class Form extends Component {
             <input
               type="text"
               className="form-control"
-              name="caption"
+              name="cap"
               onChange={this.onChange}
-              value={catpion}
+              value={cap}
             ></input>
           </div>
           <div className="form-group">
             <label>URL:</label>
             <input
-              type="url"
+              type="text"
               className="form-control"
               name="url"
               onChange={this.onChange}
@@ -53,13 +53,14 @@ export class Form extends Component {
           </div>
           <div className="form-group">
             <label>Description:</label>
-            <input
+
+            <textarea
               type="text-area"
               className="form-control"
-              name="description"
+              name="des"
               onChange={this.onChange}
-              value={description}
-            ></input>
+              value={des}
+            ></textarea>
           </div>
           <div className="form-group">
             <label>Author:</label>
