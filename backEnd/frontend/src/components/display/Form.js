@@ -12,7 +12,7 @@ export class Form extends Component {
   };
 
   static propTypes = {
-    mak44ePicture: PropTypes.func.isRequired
+    makePicture: PropTypes.func.isRequired
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -31,23 +31,21 @@ export class Form extends Component {
       <div className="accordion" id="accordionExample">
         <div className="card">
           <div className="card-header" id="headingOne">
-            <h2 className="mb-0">
-              <button
-                className="btn btn-primary btn-lg"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Add a picture
-              </button>
-            </h2>
+            <button
+              className="btn btn-primary btn-lg"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              Add a picture
+            </button>
           </div>
 
           <div
             id="collapseOne"
-            className="collapse show"
+            className="collapse"
             aria-labelledby="headingOne"
             data-parent="#accordionExample"
           >

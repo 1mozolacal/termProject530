@@ -21,8 +21,6 @@ export class center extends Component {
         <h1>Gallary</h1>
 
         {this.props.object.map(item => (
-
-
           <div className="pb-4" key={item.id}>
             <div className="content_blk">
               <h3>{item.cap}</h3>
@@ -44,7 +42,6 @@ export class center extends Component {
                 </div>
               </div>
 
-              
               <div className="button">
                 <button
                   type="button"
