@@ -109,5 +109,18 @@ img{
     margin: 30px;
 }
 
+li {
+    font-size: 17px;
+}
 
-  
+
+.cont{
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+    color: black;
+}
+
+p{
+    font-size: 20px;
+}
