@@ -5,7 +5,7 @@ import { GET_INFO, DELETE_PICTURE, ADD_PICTURE } from "./types";
 //gets all the data
 export const getInfo = () => dispatch => {
   axios
-    .get("/api/pictures/")
+    .get("http://akhrulev.pythonanywhere.com/api/pictures/")
     .then(res => {
       dispatch({
         type: GET_INFO,
@@ -17,17 +17,19 @@ export const getInfo = () => dispatch => {
 
 //delete entry
 export const deletePicture = id => dispatch => {
-  axios.delete(`/api/pictures/${id}/`).then(res => {
-    dispatch({
-      type: DELETE_PICTURE,
-      payload: id
+  axios
+    .delete(`http://akhrulev.pythonanywhere.com/api/pictures/${id}/`)
+    .then(res => {
+      dispatch({
+        type: DELETE_PICTURE,
+        payload: id
+      });
     });
-  });
 };
 
 export const makePicture = object => dispatch => {
   axios
-    .post("/api/pictures/", object)
+    .post("http://akhrulev.pythonanywhere.com/api/pictures/", object)
     .then(res => {
       dispatch({
         type: ADD_PICTURE,
