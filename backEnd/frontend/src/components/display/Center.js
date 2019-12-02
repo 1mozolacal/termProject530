@@ -39,7 +39,7 @@ export class center extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-6 img_blk">
                   <img src={item.url}></img>
                 </div>
               </div>

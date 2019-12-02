@@ -33,7 +33,7 @@ export class Form extends Component {
           <div className="card-header" id="headingOne">
             <h2 className="mb-0">
               <button
-                className="btn btn-primary btn-lg"
+                className="btn btn-primary"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseOne"
