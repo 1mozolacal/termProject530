@@ -25,7 +25,7 @@ export const deletePicture = id => dispatch => {
   });
 };
 
-export const addPicture = object => dispatch => {
+export const makePicture = object => dispatch => {
   axios
     .post("/api/pictures/", object)
     .then(res => {
