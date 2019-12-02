@@ -112,3 +112,11 @@ img{
 li {
     font-size: 17px;
 }
+
+
+.cont{
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+    color: black;
+}
