@@ -22,6 +22,7 @@ export class Form extends Component {
     const { cap, url, des, author } = this.state;
     const object = { cap, url, des, author };
     this.props.makePicture(object);
+    this.setState({ cap: "", url: "", des: "", author: "" });
     console.log("Submitted");
   };
 
@@ -50,7 +51,7 @@ export class Form extends Component {
             data-parent="#accordionExample"
           >
             <div className="card-body">
-              <form onSubmit={this.onSubmit}>
+              <form onSubmit={this.onSubmit.bind(this)}>
                 <div className="form-group">
                   <label>Caption:</label>
                   <input
